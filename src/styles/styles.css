@@ -1,0 +1,26 @@
+body{
+    min-height: 1000%;
+    min-height: 100%;
+    background-image: url(/dist/img/ideologia.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgb(185, 185, 178);   
+}
+
+body:before {
+content: "";
+width: 100%;
+min-height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: linear-gradient(180deg,rgb(207, 186, 147),blue);
+opacity: 0.2;
+z-index: -1;
+}
+
+.abc{
+font-size: 50px;
+}
