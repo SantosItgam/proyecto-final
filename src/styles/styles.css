@@ -6,7 +6,7 @@ body{
     background-size: 100%;
     background-position: center;
     background-attachment: fixed;
-    background-color: rgb(185, 185, 178);   
+    background-color: rgb(185, 185, 178);
 }
 
 body:before {
@@ -17,6 +17,8 @@ position: absolute;
 top: 0;
 left: 0;
 background: linear-gradient(180deg,rgb(207, 186, 147),blue);
+background-repeat: repeat;
+background-attachment: fixed;
 opacity: 0.2;
 z-index: -1;
 }
