@@ -4,7 +4,7 @@ const ESlintPlugin = require('eslint-webpack-plugin')
 
 module.exports = {
     // 1. Especificando el archivo index de entrada
-    entry: path.join(__dirname, '/src/index.js') ,
+    entry: path.join(__dirname, '/src/index.js'),
     // 2. Especificar el archivo de salida
     output: {
         path: path.join(__dirname, '/dist'),
@@ -17,6 +17,9 @@ module.exports = {
         compress: true,
         publicPath: '/'
     },
+
+
+    
     module : {
         rules: [
             {
@@ -27,8 +30,20 @@ module.exports = {
             {
                 test: /\.css$/,
                 use:['style-loader', 'css-loader']
-            }
+            },
+            {
+                test: /\.(png|jpg|gif)$/i,
+                use: [
+                  {
+                    loader: 'url-loader',
+                    options: {
+                      limit: 8192
+                    }
+                  }
+                ]
+              },
         ]
     },
+    
     plugins :[new ESlintPlugin()]
 }
