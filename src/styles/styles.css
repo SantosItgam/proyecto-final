@@ -23,6 +23,15 @@ opacity: 0.2;
 z-index: -1;
 }
 
+
+nav1:before{
+    opacity:0.5;
+}
+
 .abc{
-font-size: 50px;
+    margin-top: -140px;
+    position: fixed;
+    
+    width: 50px;
+    background-color: brown;
 }
